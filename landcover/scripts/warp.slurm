@@ -9,7 +9,7 @@
 #SBATCH --time=08:00:00
 #SBATCH --output=/import/beegfs/CMIP6/jdpaul3/landcover_2021_data/logs/%x_%j.out
 # Warp the NALCMS 2020v2 Alaska tile onto the exact grid of the 2015 file behind GeoServer, then finalize and verify.
-# Submit from the repo root: sbatch scripts/warp.slurm
+# Submit from the landcover folder: sbatch scripts/warp.slurm
 set -eo pipefail
 
 source /home/jdpaul3/miniconda3/etc/profile.d/conda.sh
